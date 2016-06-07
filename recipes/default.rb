@@ -22,5 +22,5 @@ end
 
 template '/mydir/info.txt' do
   source 'somefile.txt.erb'
-  variables ({ message: 'some_more_data' })
+  variables ({ message: 'some_more_data', clientdata: data_bag_item('users', 'poweruser') })
 end
