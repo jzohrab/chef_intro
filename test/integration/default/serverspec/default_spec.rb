@@ -7,6 +7,6 @@ describe 'chef_intro::default' do
   describe file('/mydir/hello.txt') do
     it { should exist }
     it { should contain(/Hello/) }
-    it { should be_owned_by('jsmith') }
+    it { should be_owned_by('neo') }
   end
 end

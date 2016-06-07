@@ -18,3 +18,5 @@ suites:
     run_list:
       - recipe[chef_intro::default]
     attributes:
+      chef_intro:
+        username: neo
