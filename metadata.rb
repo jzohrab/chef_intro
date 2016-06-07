@@ -5,3 +5,5 @@ license 'all_rights'
 description 'Installs/Configures chef_intro'
 long_description 'Installs/Configures chef_intro'
 version '0.1.0'
+
+depends 'apt', '~> 2.6.1'

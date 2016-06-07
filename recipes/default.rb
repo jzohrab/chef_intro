@@ -4,6 +4,8 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
+include_recipe 'apt::default'
+
 user node['chef_intro']['username'] do
   uid '1234'
   home '/home/random'
