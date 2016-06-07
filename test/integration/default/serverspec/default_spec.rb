@@ -15,6 +15,7 @@ describe 'chef_intro::default' do
     it { should contain(/This file is owned by neo/) }
     it { should contain(/Also passed in a message: some_more_data/) }
     it { should contain(/It's used by Trinity./) }
+    it { should contain(/And a confidential key\/cert: mykey\/mycert/) }
   end
 
 end

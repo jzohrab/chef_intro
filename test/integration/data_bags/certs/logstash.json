@@ -1,0 +1,15 @@
+{
+  "id": "logstash",
+  "crt": {
+    "encrypted_data": "5yOlZSkTnTy5mFaO+Bxy7Q2ztnWwtjjyTtvWWQTpQBs=\n",
+    "iv": "Fpaf/kmqlFGzOXmkRkRXZA==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "key": {
+    "encrypted_data": "H6GivdWXbxm5+edCooY48JOHgucoxsrv1C2pkoDqB3E=\n",
+    "iv": "17TZBXvBFYxG89lZEM/Gqg==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}
