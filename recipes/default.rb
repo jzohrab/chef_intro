@@ -19,3 +19,8 @@ file '/mydir/hello.txt' do
   owner node['chef_intro']['username']
   mode '0644'
 end
+
+template '/mydir/info.txt' do
+  source 'somefile.txt.erb'
+  variables ({ message: 'some_more_data' })
+end

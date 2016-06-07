@@ -9,4 +9,11 @@ describe 'chef_intro::default' do
     it { should contain(/Hello/) }
     it { should be_owned_by('neo') }
   end
+
+  describe file('/mydir/info.txt') do
+    it { should exist }
+    it { should contain(/This file is owned by neo/) }
+    it { should contain(/Also passed in a message: some_more_data/) }
+  end
+
 end
