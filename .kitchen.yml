@@ -17,6 +17,7 @@ suites:
   - name: default
     run_list:
       - recipe[chef_intro::default]
+    data_bags_path: 'test/integration/data_bags'
     attributes:
       chef_intro:
         username: neo
