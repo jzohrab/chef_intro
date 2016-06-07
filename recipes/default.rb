@@ -4,8 +4,7 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-user 'jsmith' do
-  comment 'Agent (James) Smith'
+user node['chef_intro']['username'] do
   uid '1234'
   home '/home/random'
   shell '/bin/bash'
@@ -17,6 +16,6 @@ end
 
 file '/mydir/hello.txt' do
   content 'Hello there!'
-  owner 'jsmith'
+  owner node['chef_intro']['username']
   mode '0644'
 end
