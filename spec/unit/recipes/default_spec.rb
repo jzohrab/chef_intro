@@ -16,5 +16,9 @@ describe 'chef_intro::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+
+    it 'creates a file' do
+      expect(chef_run).to create_file('/mydir/hello.txt')
+    end
   end
 end
